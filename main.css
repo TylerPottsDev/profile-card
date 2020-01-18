@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'montserrat', sans-serif;
+  min-height: 100vh;
+  background-image: linear-gradient(to bottom right, #CC2E5D, #FF5858);
+}
+
+.page-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.card {
+  display: block;
+  max-width: 640px;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 6px 6px rgba(0, 0, 0, 0.2);
+  transition: 0.4s ease-out;
+}
+.card:hover {
+  transform: translate(-6px, -6px);
+  box-shadow: 12px 12px rgba(0, 0, 0, 0.2);
+}
+
+
+.card-inner {
+  background-color: #FFF;
+}
+
+.card-header {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #222;
+  padding: 25px;
+}
+
+.card-header .cross {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  display: block;
+  width: 36px;
+  height: 36px;
+  background-image: url('./images/cross.png');
+  background-size: contain;
+  background-position: center;
+  cursor: pointer;
+}
+
+.logo {
+  max-width: 150px;
+  border-radius: 50%;
+  margin-bottom: 30px;
+}
+
+.card-header h1 {
+  color: #FFF;
+  font-size: 42px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.card-body {
+  padding: 25px;
+}
+
+.card-body h2 {
+  color: #222;
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.card-body p {
+  color: #666;
+  font-size: 18px;
+  font-weight: 300;
+  margin-bottom: 30px;
+}
+.card-body p:last-of-type {
+  margin-bottom: 0;
+}
+
+.card-footer {
+  padding: 25px;
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icons .icon {
+  display: block;
+  width: 48px;
+  height: 48px;
+  margin: 0px 15px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.icon.instagram {
+  width: 32px;
+  height: 32px;
+  background-image: url('./images/instagram.png');
+}
+.icon.facebook {
+  background-image: url('./images/facebook.png');
+}
+.icon.twitter {
+  background-image: url('./images/twitter.png');
+}
+.icon.youtube {
+  background-image: url('./images/youtube.png');
+}
